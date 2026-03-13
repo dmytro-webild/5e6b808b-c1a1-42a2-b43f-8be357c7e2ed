@@ -7,6 +7,7 @@ import Tag from "@/tag/Tag";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Archivo } from "next/font/google";
 import { Open_Sans } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 
 
 
@@ -16,13 +17,11 @@ export const metadata: Metadata = {
 };
 
 
-const inter = Inter({
-  variable: "--font-inter",
+
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
   subsets: ["latin"],
-});
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export default function RootLayout({
@@ -33,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${inter.variable} ${openSans.variable} antialiased`}>
+        <body className={`${interTight.variable} antialiased`}>
           <Tag />
           {children}
           <script
