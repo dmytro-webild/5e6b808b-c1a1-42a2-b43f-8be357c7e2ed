@@ -6,7 +6,7 @@ import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
 import TextAbout from "@/components/sections/about/TextAbout";
 import FeatureCardNineteen from "@/components/sections/feature/FeatureCardNineteen";
 import TestimonialCardFive from "@/components/sections/testimonial/TestimonialCardFive";
-import FeatureCardTen from "@/components/sections/feature/FeatureCardTen";
+import CardStack from "@/components/cardStack/CardStack";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterCard from "@/components/sections/footer/FooterCard";
 import { Award, Briefcase, CheckCircle, Github, Heart, Instagram, Linkedin, MessageSquare, Sparkles, Target, TrendingUp, Twitter, Users, Zap } from "lucide-react";
@@ -29,7 +29,7 @@ export default function LandingPage() {
         <NavbarLayoutFloatingInline
           brandName="AM Agency "
           navItems={[
-            { name: "Work", id: "features" },
+            { name: "Work", id: "portfolio" },
             { name: "Process", id: "process" },
             { name: "About", id: "about" },
             { name: "Contact", id: "/contact" }
@@ -54,7 +54,7 @@ export default function LandingPage() {
           imageAlt="Creative studio workspace and design process"
           mediaAnimation="slide-up"
           buttons={[
-            { text: "Explore Our Work", href: "#features" },
+            { text: "Explore Our Work", href: "#portfolio" },
             { text: "Let's Talk", href: "/contact" }
           ]}
           buttonAnimation="slide-up"
@@ -133,79 +133,62 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="features" data-section="features">
-        <FeatureCardTen
-          title="Our Services & Expertise"
-          description="Comprehensive creative solutions designed to elevate your brand and drive business growth."
-          tag="What We Offer"
-          tagIcon={Zap}
+      <div id="portfolio" data-section="portfolio">
+        <CardStack
+          title="Our Portfolio"
+          description="Explore our latest and greatest projects showcasing our creative expertise and technical excellence."
+          tag="Featured Work"
+          tagIcon={Award}
           tagAnimation="slide-up"
           textboxLayout="default"
           animationType="slide-up"
           useInvertedBackground={false}
-          features={[
-            {
-              id: "1",              title: "Web Design & Development",              description: "Beautiful, high-performance websites that convert visitors into customers. We combine stunning design with robust technology.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-beautiful-modern-website-displayed-on--1773394805768-1ba78fcf.png" },
-              items: [
-                { icon: CheckCircle, text: "Responsive design for all devices" },
-                { icon: CheckCircle, text: "Optimized performance and SEO" },
-                { icon: CheckCircle, text: "Content management systems" },
-                { icon: CheckCircle, text: "E-commerce integration" }
-              ],
-              reverse: false
-            },
-            {
-              id: "2",              title: "Brand Strategy & Identity",              description: "Comprehensive branding that resonates with your audience and differentiates you from competitors.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-comprehensive-brand-identity-display-s-1773394806113-e2214b95.png" },
-              items: [
-                { icon: CheckCircle, text: "Logo and visual identity design" },
-                { icon: CheckCircle, text: "Brand guidelines and voice" },
-                { icon: CheckCircle, text: "Market positioning strategy" },
-                { icon: CheckCircle, text: "Brand messaging framework" }
-              ],
-              reverse: true
-            },
-            {
-              id: "3",              title: "Digital Marketing & Growth",              description: "Strategic marketing solutions that increase visibility, engagement, and revenue for your business.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-digital-marketing-dashboard-showing-an-1773394806168-76f42a92.png" },
-              items: [
-                { icon: CheckCircle, text: "SEO and content marketing" },
-                { icon: CheckCircle, text: "Social media strategy" },
-                { icon: CheckCircle, text: "Paid advertising campaigns" },
-                { icon: CheckCircle, text: "Analytics and optimization" }
-              ],
-              reverse: false
-            },
-            {
-              id: "4",              title: "Mobile Apps & Experiences",              description: "Native and cross-platform applications that deliver engaging user experiences and drive business value.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/multiple-smartphones-and-tablets-display-1773394805353-a7f1ff72.png" },
-              items: [
-                { icon: CheckCircle, text: "iOS and Android development" },
-                { icon: CheckCircle, text: "Cross-platform solutions" },
-                { icon: CheckCircle, text: "API integration" },
-                { icon: CheckCircle, text: "App store optimization" }
-              ],
-              reverse: true
-            },
-            {
-              id: "5",              title: "UI/UX Design & Research",              description: "User-centered design approach that creates intuitive, beautiful interfaces that users love.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-ux-designer-working-at-a-desk-with-wir-1773394806136-e5e83465.png" },
-              items: [
-                { icon: CheckCircle, text: "User research and testing" },
-                { icon: CheckCircle, text: "Wireframing and prototyping" },
-                { icon: CheckCircle, text: "Interaction design" },
-                { icon: CheckCircle, text: "Accessibility standards" }
-              ],
-              reverse: false
-            },
-            {
-              id: "6",              title: "Consulting & Strategy",              description: "Expert guidance to navigate digital transformation and align technology with your business goals.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-business-consultant-or-strategist-pres-1773394805211-d15594c6.png" },
-              items: [
-                { icon: CheckCircle, text: "Digital transformation roadmap" },
-                { icon: CheckCircle, text: "Technology stack selection" },
-                { icon: CheckCircle, text: "Process optimization" },
-                { icon: CheckCircle, text: "Team augmentation" }
-              ],
-              reverse: true
-            }
-          ]}
-        />
+          gridVariant="uniform-all-items-equal"
+          carouselThreshold={5}
+          mode="buttons"
+        >
+          <div className="flex flex-col gap-6 p-8 rounded-2xl border border-[var(--accent)] bg-[var(--card)]">
+            <div className="w-full h-48 rounded-lg overflow-hidden">
+              <img
+                src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/uploaded-1773396641155-y1d3vcet.png"
+                alt="Portfolio project 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-[var(--foreground)]">E-Commerce Platform Redesign</h3>
+              <p className="text-sm text-[var(--foreground)] opacity-70">Modern e-commerce platform with enhanced user experience and conversion optimization</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-6 p-8 rounded-2xl border border-[var(--accent)] bg-[var(--card)]">
+            <div className="w-full h-48 rounded-lg overflow-hidden">
+              <img
+                src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-modern-tech-startup-office-environment-1773394806081-eae1d05c.png"
+                alt="Portfolio project 2"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-[var(--foreground)]">SaaS Dashboard Design</h3>
+              <p className="text-sm text-[var(--foreground)] opacity-70">Intuitive analytics dashboard for enterprise clients with real-time data visualization</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-6 p-8 rounded-2xl border border-[var(--accent)] bg-[var(--card)]">
+            <div className="w-full h-48 rounded-lg overflow-hidden">
+              <img
+                src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-creative-design-studio-showing-marcus--1773394807427-2a779d06.png"
+                alt="Portfolio project 3"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-[var(--foreground)]">Brand Identity System</h3>
+              <p className="text-sm text-[var(--foreground)] opacity-70">Comprehensive brand identity with design system and digital guidelines</p>
+            </div>
+          </div>
+        </CardStack>
       </div>
 
       <div id="contact" data-section="contact">
