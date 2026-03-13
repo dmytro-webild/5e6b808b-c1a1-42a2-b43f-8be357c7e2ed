@@ -215,7 +215,7 @@ export default function LandingPage() {
           background={{ variant: "plain" }}
           useInvertedBackground={false}
           buttons={[
-            { text: "Start a Project", href: "/contact" },
+            { text: "Get Your Free Consultation", href: "/contact" },
             { text: "Schedule a Call", href: "/contact" }
           ]}
         />
