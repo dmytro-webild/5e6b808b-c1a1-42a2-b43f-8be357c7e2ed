@@ -47,7 +47,7 @@ export default function ContactPage() {
             required: true
           }}
           useInvertedBackground={false}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-modern-creative-studio-workspace-with--1773394805437-eefa660c.png"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-modern-creative-studio-workspace-with--1773394805437-eefa660c.png?_wi=1"
           imageAlt="Contact us to start your project"
           mediaAnimation="slide-up"
           mediaPosition="right"
