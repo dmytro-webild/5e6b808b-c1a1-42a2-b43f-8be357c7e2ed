@@ -5,7 +5,6 @@ import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloating
 import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
 import TextAbout from "@/components/sections/about/TextAbout";
 import FeatureCardNineteen from "@/components/sections/feature/FeatureCardNineteen";
-import MetricCardOne from "@/components/sections/metrics/MetricCardOne";
 import TestimonialCardFive from "@/components/sections/testimonial/TestimonialCardFive";
 import FeatureCardTen from "@/components/sections/feature/FeatureCardTen";
 import ContactText from "@/components/sections/contact/ContactText";
@@ -72,10 +71,6 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           title="We transform complex ideas into intuitive, beautiful digital solutions that drive real business results"
           useInvertedBackground={false}
-          buttons={[
-            { text: "Learn Our Story", href: "#" },
-            { text: "View Case Studies", href: "#" }
-          ]}
           buttonAnimation="slide-up"
         />
       </div>
@@ -102,26 +97,6 @@ export default function LandingPage() {
               id: 3,
               tag: "Development",              title: "Development & Optimization",              subtitle: "Building performant, scalable solutions",              description: "Our developers bring designs to life with clean, efficient code. We prioritize performance, security, and scalability to create robust digital solutions that grow with your business.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-skilled-developer-coding-on-a-computer-1773394805144-a84dfcb2.png",              imageAlt: "Developer coding on computer",              buttons: [{ text: "View Tech Stack", href: "#" }]
             }
-          ]}
-        />
-      </div>
-
-      <div id="metrics" data-section="metrics">
-        <MetricCardOne
-          title="Our Impact by Numbers"
-          description="Results that speak for themselves. We measure success by the growth and satisfaction of our clients."
-          tag="Success Metrics"
-          tagIcon={TrendingUp}
-          tagAnimation="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={false}
-          gridVariant="uniform-all-items-equal"
-          animationType="slide-up"
-          metrics={[
-            { id: "1", value: "250", title: "Projects", description: "Successfully delivered across all industries", icon: Briefcase },
-            { id: "2", value: "98", title: "% Satisfaction", description: "Client satisfaction and retention rate", icon: Heart },
-            { id: "3", value: "45M", title: "Users Reached", description: "Combined reach of our digital solutions", icon: Users },
-            { id: "4", value: "15", title: "Years Active", description: "Proven expertise and industry leadership", icon: Award }
           ]}
         />
       </div>
