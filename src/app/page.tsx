@@ -28,7 +28,7 @@ export default function LandingPage() {
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
-          brandName="AM agency "
+          brandName="AM Agency "
           navItems={[
             { name: "Work", id: "features" },
             { name: "Process", id: "process" },
@@ -249,7 +249,7 @@ export default function LandingPage() {
       <div id="footer" data-section="footer">
         <FooterCard
           logoText="Creative Studio"
-          copyrightText="© 2024 Creative Studio. All rights reserved."
+          copyrightText="© 2026 AM Agency. All rights reserved."
           socialLinks={[
             { icon: Linkedin, href: "https://linkedin.com/company/creativestudio", ariaLabel: "LinkedIn" },
             { icon: Twitter, href: "https://twitter.com/creativestudio", ariaLabel: "Twitter" },
