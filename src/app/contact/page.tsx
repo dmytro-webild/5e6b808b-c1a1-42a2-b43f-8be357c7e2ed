@@ -4,7 +4,6 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import ContactSplitForm from "@/components/sections/contact/ContactSplitForm";
 import FooterCard from "@/components/sections/footer/FooterCard";
-import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -62,12 +61,6 @@ export default function ContactPage() {
         <FooterCard
           logoText="   AM Agency "
           copyrightText="© 2026 AM Agency. All rights reserved."
-          socialLinks={[
-            { icon: Linkedin, href: "https://linkedin.com/company/creativestudio", ariaLabel: "LinkedIn" },
-            { icon: Twitter, href: "https://twitter.com/creativestudio", ariaLabel: "Twitter" },
-            { icon: Instagram, href: "https://instagram.com/creativestudio", ariaLabel: "Instagram" },
-            { icon: Github, href: "https://github.com/creativestudio", ariaLabel: "GitHub" }
-          ]}
         />
       </div>
     </ThemeProvider>
