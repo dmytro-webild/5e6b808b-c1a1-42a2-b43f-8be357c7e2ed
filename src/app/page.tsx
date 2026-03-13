@@ -237,7 +237,7 @@ export default function LandingPage() {
         <ContactText
           text="Ready to bring your creative vision to life? Let's collaborate and create something extraordinary together. Reach out today and let's start the conversation."
           animationType="entrance-slide"
-          background={{ variant: "glowing-orb" }}
+          background={{ variant: "plain" }}
           useInvertedBackground={false}
           buttons={[
             { text: "Start a Project", href: "#" },
