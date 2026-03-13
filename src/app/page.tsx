@@ -51,7 +51,7 @@ export default function LandingPage() {
             { value: "98%", label: "Client Satisfaction" }
           ]}
           enableKpiAnimation={true}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-modern-creative-studio-workspace-with--1773394805437-eefa660c.png?_wi=2"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/uploaded-1773396641155-y1d3vcet.png"
           imageAlt="Creative studio workspace and design process"
           mediaAnimation="slide-up"
           buttons={[
