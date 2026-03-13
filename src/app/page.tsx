@@ -28,7 +28,7 @@ export default function LandingPage() {
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
-          brandName="Creative Studio"
+          brandName="AM agency "
           navItems={[
             { name: "Work", id: "features" },
             { name: "Process", id: "process" },
