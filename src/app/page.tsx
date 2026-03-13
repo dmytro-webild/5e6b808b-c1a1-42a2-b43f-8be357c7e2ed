@@ -7,10 +7,10 @@ import TextAbout from "@/components/sections/about/TextAbout";
 import FeatureCardNineteen from "@/components/sections/feature/FeatureCardNineteen";
 import MetricCardOne from "@/components/sections/metrics/MetricCardOne";
 import TestimonialCardFive from "@/components/sections/testimonial/TestimonialCardFive";
-import FeatureCardTen from "@/components/sections/feature/FeatureCardTen";
+import PricingCardOne from "@/components/sections/pricing/PricingCardOne";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterCard from "@/components/sections/footer/FooterCard";
-import { Award, Briefcase, CheckCircle, Github, Heart, Instagram, Linkedin, MessageSquare, Sparkles, Target, TrendingUp, Twitter, Users, Zap } from "lucide-react";
+import { Award, Briefcase, Heart, Github, Instagram, Linkedin, MessageSquare, Sparkles, Target, TrendingUp, Twitter, Users, Zap } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -92,15 +92,15 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              tag: "Strategy",              title: "Understaing & Strategy",              subtitle: "Understanding your vision and market",              description: "We dive deep into your business, audience, and competitive landscape. Through collaborative workshops and research, we develop a strategic foundation that guides every decision throughout the project.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-diverse-team-of-strategists-and-consul-1773394805105-b8ebb479.png",              imageAlt: "Team collaborating on strategy",              buttons: [{ text: "Learn More", href: "#" }]
+              tag: "Strategy",              title: "Understaing & Strategy",              subtitle: "Understanding your vision and market",              description: "We dive deep into your business, audience, and competitive landscape. Through collaborative workshops and research, we develop a strategic foundation that guides every decision throughout the project.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-diverse-team-of-strategists-and-consul-1773394805105-b8ebb479.png",              imageAlt: "Team collaborating on strategy"
             },
             {
               id: 2,
-              tag: "Design",              title: "Design & Innovation",              subtitle: "Creating beautiful, functional experiences",              description: "Our designers craft intuitive interfaces and stunning visuals that captivate users. We blend aesthetics with functionality, ensuring every pixel serves a purpose and enhances the user experience.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-talented-designer-working-at-a-compute-1773394805987-2f75a2a9.png",              imageAlt: "Designer working on digital mockups",              buttons: [{ text: "See Designs", href: "#" }]
+              tag: "Design",              title: "Design & Innovation",              subtitle: "Creating beautiful, functional experiences",              description: "Our designers craft intuitive interfaces and stunning visuals that captivate users. We blend aesthetics with functionality, ensuring every pixel serves a purpose and enhances the user experience.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-talented-designer-working-at-a-compute-1773394805987-2f75a2a9.png",              imageAlt: "Designer working on digital mockups"
             },
             {
               id: 3,
-              tag: "Development",              title: "Development & Optimization",              subtitle: "Building performant, scalable solutions",              description: "Our developers bring designs to life with clean, efficient code. We prioritize performance, security, and scalability to create robust digital solutions that grow with your business.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-skilled-developer-coding-on-a-computer-1773394805144-a84dfcb2.png",              imageAlt: "Developer coding on computer",              buttons: [{ text: "View Tech Stack", href: "#" }]
+              tag: "Development",              title: "Development & Optimization",              subtitle: "Building performant, scalable solutions",              description: "Our developers bring designs to life with clean, efficient code. We prioritize performance, security, and scalability to create robust digital solutions that grow with your business.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-skilled-developer-coding-on-a-computer-1773394805144-a84dfcb2.png",              imageAlt: "Developer coding on computer"
             }
           ]}
         />
@@ -158,76 +158,32 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="features" data-section="features">
-        <FeatureCardTen
-          title="Our Services & Expertise"
-          description="Comprehensive creative solutions designed to elevate your brand and drive business growth."
-          tag="What We Offer"
-          tagIcon={Zap}
+      <div id="pricing" data-section="pricing">
+        <PricingCardOne
+          title="Simple, Transparent Pricing"
+          description="Choose the perfect plan for your needs. Flexible pricing that scales with your business."
+          tag="Our Plans"
+          tagIcon={Sparkles}
           tagAnimation="slide-up"
           textboxLayout="default"
-          animationType="slide-up"
           useInvertedBackground={false}
-          features={[
+          animationType="slide-up"
+          plans={[
             {
-              id: "1",              title: "Web Design & Development",              description: "Beautiful, high-performance websites that convert visitors into customers. We combine stunning design with robust technology.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-beautiful-modern-website-displayed-on--1773394805768-1ba78fcf.png" },
-              items: [
-                { icon: CheckCircle, text: "Responsive design for all devices" },
-                { icon: CheckCircle, text: "Optimized performance and SEO" },
-                { icon: CheckCircle, text: "Content management systems" },
-                { icon: CheckCircle, text: "E-commerce integration" }
-              ],
-              reverse: false
+              id: "1",              badge: "Starter",              price: "$2,999",              subtitle: "Perfect for new projects",              features: [
+                "5-page website",                "Responsive design",                "Basic SEO",                "1 round of revisions",                "Email support"
+              ]
             },
             {
-              id: "2",              title: "Brand Strategy & Identity",              description: "Comprehensive branding that resonates with your audience and differentiates you from competitors.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-comprehensive-brand-identity-display-s-1773394806113-e2214b95.png" },
-              items: [
-                { icon: CheckCircle, text: "Logo and visual identity design" },
-                { icon: CheckCircle, text: "Brand guidelines and voice" },
-                { icon: CheckCircle, text: "Market positioning strategy" },
-                { icon: CheckCircle, text: "Brand messaging framework" }
-              ],
-              reverse: true
+              id: "2",              badge: "Most Popular",              badgeIcon: Sparkles,
+              price: "$5,999",              subtitle: "Best for growing businesses",              features: [
+                "10-page website",                "Advanced responsive design",                "Full SEO optimization",                "3 rounds of revisions",                "Priority email & phone support",                "Analytics setup"
+              ]
             },
             {
-              id: "3",              title: "Digital Marketing & Growth",              description: "Strategic marketing solutions that increase visibility, engagement, and revenue for your business.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-digital-marketing-dashboard-showing-an-1773394806168-76f42a92.png" },
-              items: [
-                { icon: CheckCircle, text: "SEO and content marketing" },
-                { icon: CheckCircle, text: "Social media strategy" },
-                { icon: CheckCircle, text: "Paid advertising campaigns" },
-                { icon: CheckCircle, text: "Analytics and optimization" }
-              ],
-              reverse: false
-            },
-            {
-              id: "4",              title: "Mobile Apps & Experiences",              description: "Native and cross-platform applications that deliver engaging user experiences and drive business value.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/multiple-smartphones-and-tablets-display-1773394805353-a7f1ff72.png" },
-              items: [
-                { icon: CheckCircle, text: "iOS and Android development" },
-                { icon: CheckCircle, text: "Cross-platform solutions" },
-                { icon: CheckCircle, text: "API integration" },
-                { icon: CheckCircle, text: "App store optimization" }
-              ],
-              reverse: true
-            },
-            {
-              id: "5",              title: "UI/UX Design & Research",              description: "User-centered design approach that creates intuitive, beautiful interfaces that users love.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-ux-designer-working-at-a-desk-with-wir-1773394806136-e5e83465.png" },
-              items: [
-                { icon: CheckCircle, text: "User research and testing" },
-                { icon: CheckCircle, text: "Wireframing and prototyping" },
-                { icon: CheckCircle, text: "Interaction design" },
-                { icon: CheckCircle, text: "Accessibility standards" }
-              ],
-              reverse: false
-            },
-            {
-              id: "6",              title: "Consulting & Strategy",              description: "Expert guidance to navigate digital transformation and align technology with your business goals.",              media: { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-business-consultant-or-strategist-pres-1773394805211-d15594c6.png" },
-              items: [
-                { icon: CheckCircle, text: "Digital transformation roadmap" },
-                { icon: CheckCircle, text: "Technology stack selection" },
-                { icon: CheckCircle, text: "Process optimization" },
-                { icon: CheckCircle, text: "Team augmentation" }
-              ],
-              reverse: true
+              id: "3",              badge: "Enterprise",              price: "$12,999+",              subtitle: "Custom solutions for enterprises",              features: [
+                "Unlimited pages",                "Custom design",                "Advanced optimization",                "Unlimited revisions",                "24/7 dedicated support",                "API integrations",                "Performance monitoring"
+              ]
             }
           ]}
         />
