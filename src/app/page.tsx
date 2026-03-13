@@ -47,7 +47,7 @@ export default function LandingPage() {
           background={{ variant: "glowing-orb" }}
           kpis={[
             { value: "25+ ", label: "Projects Delivered" },
-            { value: "", label: "" },
+            { value: "100%", label: "Focused on Client Needs" },
             { value: "98%", label: "Client Satisfaction" }
           ]}
           enableKpiAnimation={true}
