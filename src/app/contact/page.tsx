@@ -60,7 +60,7 @@ export default function ContactPage() {
 
       <div id="footer" data-section="footer">
         <FooterCard
-          logoText="Creative Studio"
+          logoText="   AM Agency "
           copyrightText="© 2026 AM Agency. All rights reserved."
           socialLinks={[
             { icon: Linkedin, href: "https://linkedin.com/company/creativestudio", ariaLabel: "LinkedIn" },

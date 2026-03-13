@@ -42,12 +42,12 @@ export default function LandingPage() {
 
       <div id="hero" data-section="hero">
         <HeroSplitKpi
-          title="Crafting Digital Experiences That Inspire"
+          title="Crafting Modern & Luxurious Webiste for Business"
           description="We design and build extraordinary digital products for ambitious brands. Transform your vision into reality with our expertise in web design, development, and creative strategy."
           background={{ variant: "glowing-orb" }}
           kpis={[
-            { value: "250+", label: "Projects Delivered" },
-            { value: "15+", label: "Years Experience" },
+            { value: "25+ ", label: "Projects Delivered" },
+            { value: "", label: "" },
             { value: "98%", label: "Client Satisfaction" }
           ]}
           enableKpiAnimation={true}
@@ -59,7 +59,7 @@ export default function LandingPage() {
             { text: "Let's Talk", href: "/contact" }
           ]}
           buttonAnimation="slide-up"
-          tag="Award-Winning Agency"
+          tag="Highly Dedicated Agency"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
         />
