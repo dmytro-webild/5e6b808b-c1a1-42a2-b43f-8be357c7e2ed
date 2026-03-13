@@ -33,9 +33,9 @@ export default function LandingPage() {
             { name: "Work", id: "features" },
             { name: "Process", id: "process" },
             { name: "About", id: "about" },
-            { name: "Contact", id: "contact" }
+            { name: "Contact", id: "/contact" }
           ]}
-          button={{ text: "Get Started", href: "#contact" }}
+          button={{ text: "Get Started", href: "/contact" }}
           animateOnLoad={true}
         />
       </div>
@@ -56,7 +56,7 @@ export default function LandingPage() {
           mediaAnimation="slide-up"
           buttons={[
             { text: "Explore Our Work", href: "#features" },
-            { text: "Let's Talk", href: "#contact" }
+            { text: "Let's Talk", href: "/contact" }
           ]}
           buttonAnimation="slide-up"
           tag="Award-Winning Agency"
@@ -240,8 +240,8 @@ export default function LandingPage() {
           background={{ variant: "plain" }}
           useInvertedBackground={false}
           buttons={[
-            { text: "Start a Project", href: "#" },
-            { text: "Schedule a Call", href: "#" }
+            { text: "Start a Project", href: "/contact" },
+            { text: "Schedule a Call", href: "/contact" }
           ]}
         />
       </div>
