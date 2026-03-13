@@ -135,9 +135,9 @@ export default function LandingPage() {
 
       <div id="portfolio" data-section="portfolio">
         <CardStack
-          title="Our Portfolio"
+          title="Some OF Our Work "
           description="Explore our latest and greatest projects showcasing our creative expertise and technical excellence."
-          tag="Featured Work"
+          tag="Featured Portfolio"
           tagIcon={Award}
           tagAnimation="slide-up"
           textboxLayout="default"
@@ -206,7 +206,7 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterCard
-          logoText="Creative Studio"
+          logoText="AM Agency"
           copyrightText="© 2026 AM Agency. All rights reserved."
           socialLinks={[
             { icon: Linkedin, href: "https://linkedin.com/company/creativestudio", ariaLabel: "LinkedIn" },
