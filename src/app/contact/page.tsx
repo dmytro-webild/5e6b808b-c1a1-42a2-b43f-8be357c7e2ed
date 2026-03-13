@@ -24,9 +24,9 @@ export default function ContactPage() {
         <NavbarLayoutFloatingInline
           brandName="AM Agency"
           navItems={[
-            { name: "Work", id: "/" },
-            { name: "Process", id: "/" },
-            { name: "About", id: "/" },
+            { name: "Work", id: "portfolio" },
+            { name: "Process", id: "process" },
+            { name: "About", id: "about" },
             { name: "Contact", id: "/contact" }
           ]}
           button={{ text: "Get Started", href: "/contact" }}
