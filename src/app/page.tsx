@@ -33,9 +33,9 @@ export default function LandingPage() {
             { name: "Work", id: "features" },
             { name: "Process", id: "process" },
             { name: "About", id: "about" },
-            { name: "Contact", id: "contact" }
+            { name: "Contact", id: "/contact" }
           ]}
-          button={{ text: "Get Started", href: "#contact" }}
+          button={{ text: "Get Started", href: "/contact" }}
           animateOnLoad={true}
         />
       </div>
@@ -51,12 +51,12 @@ export default function LandingPage() {
             { value: "98%", label: "Client Satisfaction" }
           ]}
           enableKpiAnimation={true}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-modern-creative-studio-workspace-with--1773394805437-eefa660c.png"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-modern-creative-studio-workspace-with--1773394805437-eefa660c.png?_wi=2"
           imageAlt="Creative studio workspace and design process"
           mediaAnimation="slide-up"
           buttons={[
             { text: "Explore Our Work", href: "#features" },
-            { text: "Let's Talk", href: "#contact" }
+            { text: "Let's Talk", href: "/contact" }
           ]}
           buttonAnimation="slide-up"
           tag="Award-Winning Agency"
@@ -240,8 +240,8 @@ export default function LandingPage() {
           background={{ variant: "plain" }}
           useInvertedBackground={false}
           buttons={[
-            { text: "Start a Project", href: "#" },
-            { text: "Schedule a Call", href: "#" }
+            { text: "Start a Project", href: "/contact" },
+            { text: "Schedule a Call", href: "/contact" }
           ]}
         />
       </div>
