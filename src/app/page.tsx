@@ -44,7 +44,7 @@ export default function LandingPage() {
         <HeroSplitKpi
           title="Crafting Digital Experiences That Inspire"
           description="We design and build extraordinary digital products for ambitious brands. Transform your vision into reality with our expertise in web design, development, and creative strategy."
-          background={{ variant: "aurora" }}
+          background={{ variant: "glowing-orb" }}
           kpis={[
             { value: "250+", label: "Projects Delivered" },
             { value: "15+", label: "Years Experience" },
@@ -237,7 +237,7 @@ export default function LandingPage() {
         <ContactText
           text="Ready to bring your creative vision to life? Let's collaborate and create something extraordinary together. Reach out today and let's start the conversation."
           animationType="entrance-slide"
-          background={{ variant: "aurora" }}
+          background={{ variant: "glowing-orb" }}
           useInvertedBackground={false}
           buttons={[
             { text: "Start a Project", href: "#" },
