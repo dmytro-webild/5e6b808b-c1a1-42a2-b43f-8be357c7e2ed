@@ -9,7 +9,7 @@ import TestimonialCardFive from "@/components/sections/testimonial/TestimonialCa
 import CardStack from "@/components/cardStack/CardStack";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterCard from "@/components/sections/footer/FooterCard";
-import { Award, Briefcase, CheckCircle, Github, Heart, Instagram, Linkedin, MessageSquare, Sparkles, Target, TrendingUp, Twitter, Users, Zap } from "lucide-react";
+import { Award, Briefcase, CheckCircle, Heart, MessageSquare, Sparkles, Target, TrendingUp, Users, Zap } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -208,12 +208,6 @@ export default function LandingPage() {
         <FooterCard
           logoText="AM Agency"
           copyrightText="© 2026 AM Agency. All rights reserved."
-          socialLinks={[
-            { icon: Linkedin, href: "https://linkedin.com/company/creativestudio", ariaLabel: "LinkedIn" },
-            { icon: Twitter, href: "https://twitter.com/creativestudio", ariaLabel: "Twitter" },
-            { icon: Instagram, href: "https://instagram.com/creativestudio", ariaLabel: "Instagram" },
-            { icon: Github, href: "https://github.com/creativestudio", ariaLabel: "GitHub" }
-          ]}
         />
       </div>
     </ThemeProvider>
