@@ -92,7 +92,7 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              tag: "Strategy",              title: "Discovery & Strategy",              subtitle: "Understanding your vision and market",              description: "We dive deep into your business, audience, and competitive landscape. Through collaborative workshops and research, we develop a strategic foundation that guides every decision throughout the project.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-diverse-team-of-strategists-and-consul-1773394805105-b8ebb479.png",              imageAlt: "Team collaborating on strategy",              buttons: [{ text: "Learn More", href: "#" }]
+              tag: "Strategy",              title: "Understaing & Strategy",              subtitle: "Understanding your vision and market",              description: "We dive deep into your business, audience, and competitive landscape. Through collaborative workshops and research, we develop a strategic foundation that guides every decision throughout the project.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Aj7GIMAiMrDMRaDjVpBEuEoiXn/a-diverse-team-of-strategists-and-consul-1773394805105-b8ebb479.png",              imageAlt: "Team collaborating on strategy",              buttons: [{ text: "Learn More", href: "#" }]
             },
             {
               id: 2,
